@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran SMKN 1 NGANJUK</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar, .footer {
+      background-color: #007bff;
+    }
+    .navbar-brand, .nav-link, .footer {
+      color: #fff !important;
+    }
+    .header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .form-section {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: -50px;
+    }
+    .footer {
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">SMKN 1 NGANJUK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Formulir Pendaftaran</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <h1>Pendaftaran Siswa Baru</h1>
+      <p>SMKN 1 NGANJUK- Tahun Ajaran 2024/2025</p>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <section id="form" class="py-5">
+    <div class="container">
+      <div class="form-section">
+        <h2 class="text-center mb-4">Formulir Pendaftaran</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">Nama Depan</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Nama Depan" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Nama Belakang</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Nama Belakang" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="birthPlace">Tempat Lahir</label>
+            <input type="text" class="form-control" id="birthPlace" placeholder="Tempat Lahir" required>
+          </div>
+          <div class="form-group">
+            <label for="birthDate">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="birthDate" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" class="form-control" required>
+              <option value="">Pilih...</option>
+              <option value="Laki-Laki">Laki-Laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Alamat</label>
+            <input type="text" class="form-control" id="address" placeholder="Alamat" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">No. Telepon</label>
+            <input type="text" class="form-control" id="phone" placeholder="No. Telepon" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="program">Program Keahlian yang Dipilih</label>
+            <select id="program" class="form-control" required>
+              <option value="">Pilih...</option>
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Teknik Otomotif">Teknik Otomotif</option>
+              <option value="Teknik Elektronika">Teknik Elektronika</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Daftar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; smkn1nganjuk.sch.id</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
